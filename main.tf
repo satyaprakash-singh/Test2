@@ -7,3 +7,4 @@ resource "azurerm_resource_group" "rg2" {
   name     = "testResourceGroup2"
   location = "Central India"
 }
+
