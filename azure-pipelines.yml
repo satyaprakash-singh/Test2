@@ -26,8 +26,11 @@ stages:
         backendAzureRmStorageAccountName: 'firstyamlstorage'
         backendAzureRmContainerName: 'pipelinecontainer'
         backendAzureRmKey: 'remote.tfstate'
-
-
+    - task: TerraformTask@5
+      inputs:
+        provider: 'azurerm'
+        command: 'plan'
+        environmentServiceNameAzureRM: 'rgpipeline'
 
 
 
